@@ -1,0 +1,65 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: #44345C;
+    text-align: center;
+    background-image: url("Img/fondo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    color: #287574;
+    font-size: 32px;
+}
+
+
+.pictogramas {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: repeat(5, auto);
+    gap: 2%;
+    max-width: 70%;
+    margin: 0 auto;
+    grid-auto-flow: column;
+}
+
+.pictograma {
+    border: none;
+    border-radius: 20px;
+    padding: 10px 10px;
+    background-color: white;
+    color: #44345C;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px #00000012;
+}
+
+.pictograma:hover {
+    background-color: #E8DEFF;
+}
+
+
+.imagen {
+    display: block;
+    margin: 0 auto 12px;
+    width: 20%;
+}
+
+#siguiente{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    width: 5%;
+    height: 10%;
+    cursor: pointer;
+}
